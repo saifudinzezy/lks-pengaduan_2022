@@ -14,7 +14,7 @@
       //1 / 0
       $add_status = $lib->add_data($no_aduan, $nik, $nama, $hp, $jns_aduan, $alamat, $ket, $response);
       if($add_status){
-          header('Location: home.php');
+          header('Location: laporan.php');
       }
   }
 ?>
