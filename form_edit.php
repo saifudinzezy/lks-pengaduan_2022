@@ -9,7 +9,7 @@ if(! isset($_SESSION['is_login']))
   $lib = new Library();
   if(isset($_GET['id'])){
       $id = $_GET['id']; 
-      $data_siswa = $lib->get_by_id($id);
+      $data_aduan = $lib->get_by_id($id);
   }
   else
   {
@@ -87,47 +87,47 @@ if(! isset($_SESSION['is_login']))
       </div>
       <div class="card-body">
       <form method="post" action="">
-          <input type="hidden" name="id" value="<?php echo $data_siswa['id']; ?>"/>
+          <input type="hidden" name="id" value="<?php echo $data_aduan['id']; ?>"/>
           <div class="form-group row">
               <label for="no_aduan" class="col-sm-2 col-form-label">No Aduan</label>
               <div class="col-sm-10">
-                <input type="text" disabled name="no_aduan" class="form-control" id="no_aduan" value="<?php echo $data_siswa['no_aduan']; ?>">
+                <input type="text" disabled name="no_aduan" class="form-control" id="no_aduan" value="<?php echo $data_aduan['no_aduan']; ?>">
               </div>
           </div>
           <div class="form-group row">
               <label for="nik" class="col-sm-2 col-form-label">NIK</label>
               <div class="col-sm-10">
-                <input type="text" disabled name="nik" class="form-control" id="nik" value="<?php echo $data_siswa['nik']; ?>">
+                <input type="text" disabled name="nik" class="form-control" id="nik" value="<?php echo $data_aduan['nik']; ?>">
               </div>
           </div>
           <div class="form-group row">
               <label for="nama" class="col-sm-2 col-form-label">Nama</label>
               <div class="col-sm-10">
-                <input type="text" value="<?php echo $data_siswa['nama']; ?>" disabled name="nama" class="form-control" id="nama">
+                <input type="text" value="<?php echo $data_aduan['nama']; ?>" disabled name="nama" class="form-control" id="nama">
               </div>
           </div>
           <div class="form-group row">
               <label for="hp" class="col-sm-2 col-form-label">HP</label>
               <div class="col-sm-10">
-                <input class="form-control" disabled name="hp" id="hp" value="<?php echo $data_siswa['hp']; ?>">
+                <input class="form-control" disabled name="hp" id="hp" value="<?php echo $data_aduan['hp']; ?>">
               </div>
           </div>
           <div class="form-group row">
               <label for="jns_aduan" class="col-sm-2 col-form-label">Jenis Aduan</label>
               <div class="col-sm-10">
-                <input class="form-control" disabled name="jns_aduan" id="jns_aduan" value="<?php echo $data_siswa['jns_aduan']; ?>">
+                <input class="form-control" disabled name="jns_aduan" id="jns_aduan" value="<?php echo $data_aduan['jns_aduan']; ?>">
               </div>
           </div>
           <div class="form-group row">
               <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
               <div class="col-sm-10">
-                <input class="form-control" disabled name="alamat" id="alamat" value="<?php echo $data_siswa['alamat']; ?>">
+                <input class="form-control" disabled name="alamat" id="alamat" value="<?php echo $data_aduan['alamat']; ?>">
               </div>
           </div>
           <div class="form-group row">
               <label for="ket" class="col-sm-2 col-form-label">Keterangan</label>
               <div class="col-sm-10">
-                <textarea class="form-control" disabled name="ket" id="ket"><?php echo $data_siswa['ket']; ?></textarea>
+                <textarea class="form-control" disabled name="ket" id="ket"><?php echo $data_aduan['ket']; ?></textarea>
               </div>
           </div>
           <div class="form-group row">
